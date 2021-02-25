@@ -1,0 +1,19 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/mixins.scss';
+
+.CircleRightLink {
+    align-items: center;
+    display: grid;
+    color: $dark-plum;
+    column-gap: .5em;
+    font-size: 18px;
+    font-weight: 300;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 20px;
+    row-gap: .5em;
+    text-decoration: none;
+
+    @include desktop {
+        font-size: 24px;
+    }
+}

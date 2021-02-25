@@ -1,0 +1,144 @@
+@import '../../assets/colors.scss';
+@import '../../assets/mixins.scss';
+
+.Accordion {
+    background-color: transparent;
+
+    &_Item {
+        padding: 34px 23px 14px 23px;
+        border: 1.5px solid $mid-purple;
+        border-top-width: 0;
+
+        &:first-child {
+            border-top-width: 1.5px;
+        }
+
+        &:last-child {
+            border-bottom-width: 1.5px;
+        }
+
+        &_Head {
+            display: grid;
+            grid-template-columns: 90% 10%;
+            cursor: pointer;
+
+            .Standard_Paragraph {
+                font-weight: normal;
+                padding: 0;
+                margin: 0 0 20px 0;
+
+                &.headerText {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &_Content {
+
+            &_Header {
+                display: grid;
+                grid-template-columns: 100%;
+                margin-bottom: 30px;
+                align-items: center;
+                margin-bottom: 30px;
+
+                @include desktop {
+                    grid-template-columns: 20% 80%;
+                }
+
+                img {
+                    border-radius: 30px;
+                    width: auto;
+
+                    @include desktop {
+                        width: 100%;
+                    }
+
+                }
+
+                .Standard_Header {
+                    padding: 0;
+                    margin: 10px 0 0;
+
+                    @include desktop {
+                        border-bottom: none;
+                        padding-left: 32px;    
+                    }
+
+                }
+
+            }
+
+            .Standard_Paragraph {
+                margin: 0 0 20px 0;
+
+                @include desktop {
+                    font-size: 24px;
+                }
+            }
+
+            ul {
+                margin: 0 0 20px 0;
+                list-style: none;
+                padding: 0 0 0 30px;
+
+                li {
+                    padding: 10px;
+                    font-size: 18px;
+                    line-height: 120%;
+                    font-weight: 300;
+                    font-style: normal;
+
+                    &::marker {
+                        content: "\2022";  
+                        color: $mid-purple; 
+                        display: inline-block; 
+                    }
+
+                    @include desktop {
+                        font-size: 24px;
+                    }
+
+                }
+            }
+
+            ol {
+
+                li {
+                    padding: 10px;
+                    font-size: 18px;
+                    line-height: 120%;
+                    font-weight: 300;
+                    font-style: normal; 
+
+                    @include desktop {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_Toggle {
+        margin-left: 15px;
+        margin-bottom: 20px;
+        color: $mid-purple;
+        padding: 0;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        padding-right: 10px;
+
+        &:focus {
+            outline: none;
+        }
+
+        svg {
+            display: block;
+            width: 20px;
+            height: 10px;
+            float: right;
+            
+        }
+    }
+}

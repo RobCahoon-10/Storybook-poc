@@ -1,0 +1,49 @@
+@import '../../../assets/colors.scss';
+
+.ChevronButton {
+    position: relative;
+    display: inline-block;
+    background-color: $ChevronButton-Bg-Color;
+    border-radius: 30px;
+    color: $ChevronButton-Color;
+    cursor: pointer;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 80px 0 30px;
+    width: max-content;
+    overflow: hidden;
+    user-select: none;
+
+    &:hover {
+        background-color: $ChevronButton-Bg-Color-Hover
+    }
+
+    svg {
+        position: absolute;
+        right: 0;
+    }
+
+    // Border
+    &-Border {
+        border: 1px $ChevronButton-Border-Color solid;
+    }
+
+    // Background - purple
+    &-Purple {
+        background-color: $ChevronButton-Bg-Color-Purple;
+
+        &:hover {
+            background-color: $ChevronButton-Bg-Color-Purple-Hover;
+        }
+    }
+
+    &:disabled,
+    &[disabled]{
+        background-color: $ChevronButton-Bg-Color-Disabled;
+
+        svg .angle-background {
+            fill: $ChevronButton-Bg-Color-AngleFill;
+        }
+    }
+}

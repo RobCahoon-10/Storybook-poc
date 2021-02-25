@@ -1,0 +1,76 @@
+// Site
+$site-background : #faf7f7;
+$body-text: #484848;
+
+// Generic Colours
+$dark-purple: #6527C9;
+$mid-purple: #712CE2;
+$light-purple: #FCF0FF;
+$dark-plum: #8E2DBA;
+$light-plum: #BB6BD9;
+$light-pink: #FAE3FF;
+$light-pink-half-opacity: rgba(250,227,255,.5);
+$light-grey: #979797;
+$mid-grey: #BABABA;
+$dark-grey: #5C6268;
+$mid-plum: #A034D0;
+$white : #FFFFFF;
+$peach: #FFCACA;
+
+// Chevron Button
+$ChevronButton-Border-Color : #FFFFFF;
+$ChevronButton-Color : #FFFFFF;
+
+    // Default Background
+    $ChevronButton-Bg-Color : #8E2DBA;
+    $ChevronButton-Bg-Color-Hover : #BB6BD9;
+
+    // Mid-Purple Background
+    $ChevronButton-Bg-Color-Purple : #712ce2;
+    $ChevronButton-Bg-Color-Purple-Hover : #8f53f1;
+
+    // Disabled
+    $ChevronButton-Bg-Color-Disabled : #979797;
+    $ChevronButton-Bg-Color-AngleFill : #bababa;
+    
+
+// Toggle Switch
+$toggleSwitch-background-off :  #CCCCCC;
+$toggleSwitch-background-on :  #8E2DBA;
+$toggleSwitch-button-color-off : #BB6BD9;
+$toggleSwitch-button-color-on : #FFFFFF;
+
+// Footer
+$footer-background : #484848;
+$footer-text : #FFFFFF;
+
+// Cookie Consent
+$cookie-background : #6527C9;
+$cookie-text : #FFFFFF;
+
+    // Cookie Concent Settings
+    $cookie-settings-background : #FFFFFF;
+    $cookie-settings-background-inner : #6527C9;
+    $cookie-settings-text : #FFFFFF;
+
+// Main Navigation
+$mainNavLink-toggle-button-color: #FFFFFF;
+$mainNavLink-selected-border-color: #FFFFFF;
+$mainNavLink-color: #d8d8d8;
+$mainNavLink-color-hover: #FFFFFF;
+$mainNavLinks-end-color: #6527C9;
+$mainNavLinks-tooltip-background: #FFFFFF;
+
+// Slider Dots
+$slider-background-color: #FFFFFF;
+$slider-dot-background-color: #FFFFFF;
+$slider-dot-color: #712CE2 !default;
+$slider-dot-border-radius: 30px;
+$slider-dot-opacity-not-active: 0.25 !default;
+$slider-dot-opacity-default: 1 !default;
+$slider-dot-opacity-on-hover: .5 !default;
+$slider-dot-character: "\2022" !default;
+
+
+
+
